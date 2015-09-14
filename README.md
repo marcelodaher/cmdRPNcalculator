@@ -8,4 +8,6 @@ calculatorLoop.py implements the Loop using python cmd module
 rpnCalculator.py calls the loop
 
 To run, open the dependency that contains both files on terminal and run
-```python rpnCalculator.py```
+```sh
+$ python rpnCalculator.py
+```
