@@ -1,4 +1,4 @@
-class calculatorQueue:
+class CalculatorQueue:
     """A LIFO Queue to keep number data"""
     q = [] #where we will keep our numbers
     
@@ -7,6 +7,8 @@ class calculatorQueue:
     
     def __str__(self):
         """A method to print the queue"""
+        if self.empty():
+            return "Queue is empty"
         s = "Queue:"
         for element in self.q:
             s += '\n' + str(element)
@@ -22,7 +24,7 @@ class calculatorQueue:
     
     def clear(self):
         """Method to empty the queue"""
-        q.clear()
+        self.q = []
     
     def empty(self):
         return 0 == len(self.q)
