@@ -58,5 +58,15 @@ class CalculatorLoop(cmd.Cmd):
         if not self.q.empty():
             self.q.get()
         else: print "Queue is already empty"
+        
+    def do_switch(self, line):
+        """Switch the last 2 values on the queue"""
+        try:
+            temp1 = self.q.get()
+            temp2 = self.q.get()
+            self.q.push(temp1)
+            self.q.push(temp2)
+        except:
+            print "Not enough elements on the queue"
     
     do_EOF = do_exit
