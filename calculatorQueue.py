@@ -20,7 +20,7 @@ class CalculatorQueue:
     
     def get (self):
         """Method to pop and return first element"""
-        return self.q.pop();
+        return self.q.pop()
     
     def clear(self):
         """Method to empty the queue"""
